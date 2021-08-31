@@ -1,0 +1,72 @@
+TranslationUnitDecl 0x7fac1e040008 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x7fac1e040918 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x7fac1e0405a0 '__int128'
+|-TypedefDecl 0x7fac1e040988 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x7fac1e0405c0 'unsigned __int128'
+|-TypedefDecl 0x7fac1e040d28 <<invalid sloc>> <invalid sloc> implicit __NSConstantString '__NSConstantString_tag'
+| `-RecordType 0x7fac1e040a70 '__NSConstantString_tag'
+|   `-CXXRecord 0x7fac1e0409e0 '__NSConstantString_tag'
+|-TypedefDecl 0x7fac1e040dd0 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x7fac1e040d80 'char *'
+|   `-BuiltinType 0x7fac1e0400a0 'char'
+|-TypedefDecl 0x7fac1e07b950 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list '__va_list_tag [1]'
+| `-ConstantArrayType 0x7fac1e07b8f0 '__va_list_tag [1]' 1 
+|   `-RecordType 0x7fac1e040ec0 '__va_list_tag'
+|     `-CXXRecord 0x7fac1e040e28 '__va_list_tag'
+`-FunctionDecl 0x7fac1e07bc28 <generic.cpp:1:1, line:4:1> line:1:5 main 'int (int, char **)'
+  |-ParmVarDecl 0x7fac1e07b9c0 <col:10, col:14> col:14 used argc 'int'
+  |-ParmVarDecl 0x7fac1e07bb08 <col:20, col:31> col:26 argv 'char **':'char **'
+  `-CompoundStmt 0x7fac1e08c228 <col:34, line:4:1>
+    |-DeclStmt 0x7fac1e08bc10 <line:2:3, col:47>
+    | `-VarDecl 0x7fac1e07bd88 <col:3, col:46> col:8 used lambda '(lambda at generic.cpp:2:17)':'(lambda at generic.cpp:2:17)' cinit
+    |   `-ExprWithCleanups 0x7fac1e08bbf8 <col:17, col:46> '(lambda at generic.cpp:2:17)':'(lambda at generic.cpp:2:17)'
+    |     `-CXXConstructExpr 0x7fac1e08bbc8 <col:17, col:46> '(lambda at generic.cpp:2:17)':'(lambda at generic.cpp:2:17)' 'void ((lambda at generic.cpp:2:17) &&) noexcept' elidable
+    |       `-MaterializeTemporaryExpr 0x7fac1e08bb60 <col:17, col:46> '(lambda at generic.cpp:2:17)' xvalue
+    |         `-LambdaExpr 0x7fac1e08b578 <col:17, col:46> '(lambda at generic.cpp:2:17)'
+    |           |-CXXRecordDecl 0x7fac1e07c048 <col:17> col:17 implicit class definition
+    |           | |-DefinitionData generic lambda pass_in_registers empty standard_layout trivially_copyable can_const_default_init
+    |           | | |-DefaultConstructor defaulted_is_constexpr
+    |           | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+    |           | | |-MoveConstructor exists simple trivial
+    |           | | |-CopyAssignment trivial has_const_param needs_implicit implicit_has_const_param
+    |           | | |-MoveAssignment
+    |           | | `-Destructor simple irrelevant trivial
+    |           | |-FunctionTemplateDecl 0x7fac1e07c358 <<invalid sloc>, col:46> col:17 operator()
+    |           | | |-TemplateTypeParmDecl 0x7fac1e07bdf0 <col:20, col:25> col:25 implicit class depth 0 index 0 argc:auto
+    |           | | |-CXXMethodDecl 0x7fac1e07c2a8 <col:29, col:46> col:17 operator() 'auto (auto) const' inline
+    |           | | | |-ParmVarDecl 0x7fac1e07bef8 <col:20, col:25> col:25 referenced argc 'auto'
+    |           | | | `-CompoundStmt 0x7fac1e07c470 <col:31, col:46>
+    |           | | |   `-ReturnStmt 0x7fac1e07c460 <col:33, col:40>
+    |           | | |     `-DeclRefExpr 0x7fac1e07c440 <col:40> 'auto' lvalue ParmVar 0x7fac1e07bef8 'argc' 'auto'
+    |           | | `-CXXMethodDecl 0x7fac1e08be28 <col:29, col:46> col:17 used operator() 'int (int) const' inline
+    |           | |   |-TemplateArgument type 'int'
+    |           | |   | `-BuiltinType 0x7fac1e040100 'int'
+    |           | |   |-ParmVarDecl 0x7fac1e08bcf0 <col:20, col:25> col:25 used argc 'int':'int'
+    |           | |   `-CompoundStmt 0x7fac1e08c0a0 <col:31, col:46>
+    |           | |     `-ReturnStmt 0x7fac1e08c090 <col:33, col:40>
+    |           | |       `-ImplicitCastExpr 0x7fac1e08c078 <col:40> 'int':'int' <LValueToRValue>
+    |           | |         `-DeclRefExpr 0x7fac1e08bf28 <col:40> 'int':'int' lvalue ParmVar 0x7fac1e08bcf0 'argc' 'int':'int'
+    |           | |-FunctionTemplateDecl 0x7fac1e08b400 <<invalid sloc>, col:46> col:17 implicit operator auto (*)(type-parameter-0-0)
+    |           | | |-TemplateTypeParmDecl 0x7fac1e07bdf0 <col:20, col:25> col:25 implicit class depth 0 index 0 argc:auto
+    |           | | `-CXXConversionDecl 0x7fac1e07c738 <col:17, col:46> col:17 implicit operator auto (*)(type-parameter-0-0) 'auto (*() const noexcept)(auto)' inline
+    |           | |-FunctionTemplateDecl 0x7fac1e08b508 <<invalid sloc>, col:46> col:17 implicit __invoke
+    |           | | |-TemplateTypeParmDecl 0x7fac1e07bdf0 <col:20, col:25> col:25 implicit class depth 0 index 0 argc:auto
+    |           | | `-CXXMethodDecl 0x7fac1e08b460 <col:17, col:46> col:17 implicit __invoke 'auto (auto)' static inline
+    |           | |   `-ParmVarDecl 0x7fac1e07c6d0 <col:20, col:25> col:25 argc 'auto'
+    |           | |-CXXDestructorDecl 0x7fac1e08b5a0 <col:17> col:17 implicit referenced ~ 'void () noexcept' inline default trivial
+    |           | |-CXXConstructorDecl 0x7fac1e08b7f8 <col:17> col:17 implicit constexpr  'void (const (lambda at generic.cpp:2:17) &)' inline default trivial noexcept-unevaluated 0x7fac1e08b7f8
+    |           | | `-ParmVarDecl 0x7fac1e08b920 <col:17> col:17 'const (lambda at generic.cpp:2:17) &'
+    |           | `-CXXConstructorDecl 0x7fac1e08b9c0 <col:17> col:17 implicit used constexpr  'void ((lambda at generic.cpp:2:17) &&) noexcept' inline default trivial
+    |           |   |-ParmVarDecl 0x7fac1e08baf0 <col:17> col:17 '(lambda at generic.cpp:2:17) &&'
+    |           |   `-CompoundStmt 0x7fac1e08bbb8 <col:17>
+    |           `-CompoundStmt 0x7fac1e07c470 <col:31, col:46>
+    |             `-ReturnStmt 0x7fac1e07c460 <col:33, col:40>
+    |               `-DeclRefExpr 0x7fac1e07c440 <col:40> 'auto' lvalue ParmVar 0x7fac1e07bef8 'argc' 'auto'
+    `-ReturnStmt 0x7fac1e08c218 <line:3:3, col:21>
+      `-CXXOperatorCallExpr 0x7fac1e08c1d8 <col:10, col:21> 'int':'int' '()'
+        |-ImplicitCastExpr 0x7fac1e08c158 <col:16, col:21> 'int (*)(int) const' <FunctionToPointerDecay>
+        | `-DeclRefExpr 0x7fac1e08c0b8 <col:16, col:21> 'int (int) const' lvalue CXXMethod 0x7fac1e08be28 'operator()' 'int (int) const'
+        |-ImplicitCastExpr 0x7fac1e08c1a8 <col:10> 'const (lambda at generic.cpp:2:17)' lvalue <NoOp>
+        | `-DeclRefExpr 0x7fac1e08bc28 <col:10> '(lambda at generic.cpp:2:17)':'(lambda at generic.cpp:2:17)' lvalue Var 0x7fac1e07bd88 'lambda' '(lambda at generic.cpp:2:17)':'(lambda at generic.cpp:2:17)'
+        `-ImplicitCastExpr 0x7fac1e08c1c0 <col:17> 'int' <LValueToRValue>
+          `-DeclRefExpr 0x7fac1e08bc48 <col:17> 'int' lvalue ParmVar 0x7fac1e07b9c0 'argc' 'int'
